@@ -3,154 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deven Grover | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Deven Grover's portfolio - Software Developer, Full-Stack (MERN), AI/ML.">
+    <meta name="keywords" content="Deven Grover, portfolio, Software Developer, MERN, AI, VIT Vellore">
+    <meta name="author" content="Deven Grover">
+    <link rel="stylesheet" href="main.css">
+    <title>Deven Grover - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
 </head>
 <body>
-    <header>
-        <nav class="navbar always-top">
-            <div class="nav-brand">
-                <span class="brand-name">Deven Grover</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#leadership">Leadership</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="navToggle">
-                <span></span><span></span><span></span>
-            </div>
-        </nav>
-        <div class="hero">
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#" class="logo">Deven</a>
+            <button class="menu-btn" type="button">Menu</button>
+        </div>
+    </nav>
+
+    <div class="menu-overlay">
+        <div class="menu-links">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
             <h1>Deven Grover</h1>
-            <p class="subtitle">Software Developer</p>
-            <button class="contact-btn hero-btn" onclick="window.open('https://www.linkedin.com/in/deven-grover/','_blank')">LinkedIn</button>
-            <button class="contact-btn hero-btn" onclick="window.open('https://github.com/DevenGrover','_blank')">GitHub</button>
+            <p>Software Developer · Final-year B.Tech (CSE - IS) at VIT Vellore.</p>
+            <a class="cta-btn" href="#projects" id="viewProjectsBtn">View Projects</a>
+            <a href="http://devengrover.me/" target="_blank" class="cta-btn" rel="noopener">Portfolio</a>
+            <a href="https://github.com/devengrover" target="_blank" class="cta-btn" rel="noopener" id="githubBtn">GitHub</a>
+            <a href="https://www.linkedin.com/in/deven-grover/" target="_blank" class="cta-btn" rel="noopener">LinkedIn</a>
+
         </div>
-    </header>
-    <main>
-        <section id="about" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Summary</h2>
-                <div class="card card-summary">
-                    <p class="section-desc">Final-year B.Tech student at VIT Vellore with a strong foundation in programming and problem-solving. Actively learning Data Structures and Algorithms, and full-stack development through hands-on projects and internships. Passionate about delivering scalable, user-focused software solutions.</p>
-                </div>
+        <div id="cube-container" class="cube-container"></div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <div class="skill-list">
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">R</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">React.js</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">Express.js</div>
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">Tailwind CSS</div>
+            <div class="skill-item">Bootstrap</div>
+            <div class="skill-item">Flask</div>
+            <div class="skill-item">NumPy</div>
+            <div class="skill-item">Pandas</div>
+            <div class="skill-item">PyTorch</div>
+            <div class="skill-item">OpenCV</div>
+            <div class="skill-item">Scikit-learn</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">PostgreSQL</div>
+            <div class="skill-item">MongoDB</div>
+            <div class="skill-item">Git/GitHub</div>
+            <div class="skill-item">Jupyter Notebook</div>
+            <div class="skill-item">MATLAB</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-item" data-description="<strong>Full-Stack Restaurant Management System</strong><br><br>Designed a full-stack restaurant management system using the <strong>MERN stack</strong> to manage <strong>100+ daily orders and reservations</strong>, improving operational tracking accuracy by 15% and ensuring seamless data flow between modules.<br><br>• Built a responsive React.js interface and modular RESTful APIs with Node.js, Express.js, and MongoDB<br>• Enhanced system load efficiency by 10% through optimized database queries<br>• Implemented real-time order tracking and table management features<br>• Created admin dashboard for inventory and staff management<br><br><strong>Tech Stack:</strong> MongoDB, Express.js, React.js, Node.js">
+                <h3>REMA | Restaurant Management System</h3>
             </div>
-        </section>
-        <section id="education" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                <div class="card-grid">
-                    <div class="card card-edu">
-                        <h3>Vellore Institute of Technology</h3>
-                        <p>B.Tech-Computer Science Engineering (Information Security)</p>
-                        <p>Sept 2022 – Jul 2026 | Vellore, Tamil Nadu, IN</p>
-                        <p>CGPA: 7.93</p>
-                    </div>
-                    <div class="card card-edu">
-                        <h3>Venkateshwar Global School</h3>
-                        <p>CBSE</p>
-                        <p>Apr 2008 – Jun 2022 | Delhi, IN</p>
-                        <p>Percentage: 90.6%</p>
-                    </div>
-                </div>
+            <div class="project-item" data-description="<strong>AI-Powered Autonomous Interview Platform</strong><br><br>Developed an AI-powered autonomous interview platform integrating <strong>real-time facial and object detection with YOLO and OpenCV</strong>, enabling automated candidate monitoring and response evaluation.<br><br>• Enhanced interview accuracy by <strong>17% over baseline models</strong> through optimized NLP-driven response analysis<br>• Implemented efficient Flask–React integration for seamless front-end interaction<br>• Built automated proctoring system with fraud detection capabilities<br>• Integrated speech-to-text for automated transcription and analysis<br>• Deployed using Docker for containerized deployment<br><br><strong>Tech Stack:</strong> Python, Flask, React, PyTorch, YOLO, OpenCV, NLP">
+                <h3>Intellihire</h3>
             </div>
-        </section>
-        <section id="experience" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div class="card card-exp">
-                    <h3>CJ DARCL LOGISTICS LTD.</h3>
-                    <p>SDE Intern | May 2025 – June 2025 | Gurugram, IN</p>
-                    <div class="card-content">
-                        <p><strong>Developed and integrated dynamic UI components using React.js, enhancing task tracking efficiency for internal users.</strong></p>
-                        <p>Collaborated on backend API development and resolved significant bugs that improved application stability.</p>
-                    </div>
-                </div>
+            <div class="project-item" data-description="<strong>University Bulk Purchase Platform</strong><br><br>Developed a comprehensive full-stack platform connecting university students for <strong>bulk purchasing to reduce costs</strong> through collective buying power.<br><br>• Built complete web application with frontend, backend, and iOS mobile app<br>• Implemented user authentication, product listings, and group purchase coordination<br>• Created real-time order tracking and payment integration<br>• Designed responsive UI/UX for seamless cross-platform experience<br>• Developed RESTful APIs for mobile-web synchronization<br><br><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Python (Backend), iOS (Swift/SwiftUI)<br><strong>Repository:</strong> <a href='https://github.com/DevenGrover/Unibulk' target='_blank' style='color: #00fff2;'>GitHub</a>">
+                <h3>Unibulk | Student Bulk Purchase Platform</h3>
             </div>
-        </section>
-        <section id="projects" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="card-grid">
-                    <div class="card card-proj">
-                        <h3>REMA | Restaurant Management System</h3>
-                        <div class="card-content">
-                            <p><strong>Designed and implemented a full-stack restaurant management system to simulate handling 100 orders and reservations on daily basis.</strong></p>
-                            <p>Built a responsive and interactive UI using React.js, and created modular backend APIs with Node.js and Express.js, improving load efficiency.</p>
-                        </div>
-                    </div>
-                    <div class="card card-proj">
-                        <h3>Intellihire</h3>
-                        <div class="card-content">
-                            <p><strong>Built an AI-powered autonomous interviewer using Python, Flask, React, PyTorch, and YOLO.</strong></p>
-                            <p>Improved accuracy by 17% over competitors using real-time object detection and NLP.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="project-item" data-description="<strong>Dark Web Intelligence & Security Research Tool</strong><br><br>Built a specialized Python-based web crawler that <strong>searches and indexes .onion sites</strong> through the Ahmia search engine for security research and threat intelligence purposes.<br><br>• Developed keyword-based search functionality similar to Google for dark web content<br>• Implemented TOR network integration for anonymous crawling<br>• Created HTML page structure rendering to view .onion content in standard browsers<br>• Built intelligent scraping algorithms to identify and catalog illegal activities for law enforcement<br>• Designed modular architecture with separate components for searching, scraping, and rendering<br>• Implemented ethical safeguards and logging for security research compliance<br><br><strong>Use Cases:</strong> Cybersecurity research, threat intelligence, law enforcement investigations<br><strong>Tech Stack:</strong> Python, TOR, BeautifulSoup, Requests<br><strong>Repository:</strong> <a href='https://github.com/DevenGrover/dark-web-crawler' target='_blank' style='color: #00fff2;'>GitHub</a>">
+                <h3>Dark Web Crawler | Security Research Tool</h3>
             </div>
-        </section>
-        <section id="skills" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="card card-skills">
-                    <div class="card-content skills-list">
-                        <p><strong>Programming Languages:</strong> Python, Java, JavaScript, R, SQL</p>
-                        <p><strong>Frontend:</strong> ReactJS, HTML, CSS, Tailwind CSS, Bootstrap</p>
-                        <p><strong>Backend:</strong> NodeJS, ExpressJS</p>
-                        <p><strong>Tools:</strong> Git/GitHub, Jupyter Notebook, MATLAB, Google Colab, MS-Office</p>
-                        <p><strong>Libraries:</strong> Flask, Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, PyTorch</p>
-                        <p><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</p>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience">
+        <h2>Experience</h2>
+        <div class="experience-list">
+            <div class="experience-item" data-description="<strong>CJ DARCL LOGISTICS LTD.</strong> | Gurugram, India<br><br><strong>SDE Intern</strong> | May 2025 - June 2025<br><br>• Developed and integrated <strong>dynamic and reusable UI components</strong> using React.js for <strong>CIO Radar</strong>, a proprietary task tracking platform, enhancing progress visualization and user interaction for internal teams across 50+ locations<br><br>• Collaborated with backend developers to <strong>design and maintain RESTful APIs</strong>, implementing robust error handling and data validation that improved application stability by 20%<br><br>• Optimized existing API endpoints and refactored backend logic using Node.js and Express.js, <strong>reducing response latency by 15%</strong> and improving overall system performance<br><br>• Participated in Agile sprints, code reviews, and daily standups, contributing to a <strong>25% increase in feature delivery speed</strong><br><br>• Debugged and resolved critical production issues affecting 1000+ daily active users, ensuring 99.9% uptime">
+                <h3>Software Development Engineer Intern</h3>
+                <p class="experience-company">CJ DARCL LOGISTICS LTD.</p>
+                <p class="experience-date">May 2025 - June 2025</p>
             </div>
-        </section>
-        <section id="leadership" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Leadership</h2>
-                <div class="card card-lead">
-                    <div class="card-content">
-                        <p><strong>Senior core member, VIT SPARTANS (2024-25)</strong></p>
-                        <p>Managed 1000+ students during Riviera 2025, leading planning, logistics, and team coordination</p>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <section id="leadership" class="section leadership">
+        <h2>Leadership & Involvement</h2>
+        <div class="leadership-list">
+            <div class="leadership-item" data-description="<strong>VIT SPARTANS</strong> | Vellore Institute of Technology<br><br><strong>Senior Core Member</strong> | August 2024 - April 2025<br><br>• Appointed as Senior Core Member for the 2024-25 tenure, <strong>responsible for organizing large-scale student engagement events</strong> and mentoring junior members in event management, logistics coordination, and team leadership<br><br>• Led and coordinated a team of <strong>1000+ students during Riviera 2025</strong>, VIT's annual cultural fest with 50,000+ attendees, overseeing event planning, resource allocation, vendor management, and cross-functional collaboration<br><br>• Managed <strong>budgets exceeding ₹5 lakhs</strong> for multiple events, ensuring cost-effective execution while maintaining high quality standards<br><br>• Implemented <strong>digital coordination systems</strong> using Google Workspace and Slack, improving team communication efficiency by 40% and reducing task completion time<br><br>• Mentored 50+ junior volunteers in leadership skills, event management, and professional development">
+                <h3>Senior Core Member, VIT SPARTANS</h3>
+                <p class="leadership-org">Vellore Institute of Technology</p>
+                <p class="leadership-date">Aug 2024 - Apr 2025</p>
             </div>
-        </section>
-        <section id="certifications" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Certifications</h2>
-                <div class="card card-cert">
-                    <div class="card-content">
-                        <p><strong>Full Stack Developer (MERN Stack) – SmartInternz</strong></p>
-                        <p>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</p>
-                    </div>
-                </div>
+            <div class="leadership-item" data-description="<strong>Riviera 2025 - South India's Biggest Cultural Carnival</strong><br><br><strong>Event Coordinator & Team Lead</strong><br><br>• Spearheaded logistics and operations for Riviera 2025, coordinating <strong>1000+ team members</strong> across 15+ departments including hospitality, security, technical support, and guest relations<br><br>• Orchestrated <strong>100+ events</strong> spanning music, dance, drama, fashion, and gaming competitions with participants from 200+ colleges across India<br><br>• Ensured seamless execution of high-profile performances by celebrity artists and managed crowd control for audiences exceeding <strong>10,000 people per day</strong><br><br>• Demonstrated exceptional problem-solving skills by <strong>resolving real-time challenges</strong> including technical failures, scheduling conflicts, and emergency situations<br><br>• Developed leadership and strategic planning abilities in a fast-paced, high-pressure environment">
+                <h3>Riviera 2025 Coordinator</h3>
+                <p class="leadership-org">VIT SPARTANS</p>
+                <p class="leadership-date">February 2025</p>
             </div>
-        </section>
-        <section id="contact" class="section fade-in">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <div class="card card-contact">
-                    <div class="card-content contact-list">
-                        <p><strong>Email:</strong> <a href="mailto:devengrover9856@gmail.com">devengrover9856@gmail.com</a></p>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <section id="education" class="section education">
+        <h2>Education</h2>
+        <div class="education-list">
+            <div class="education-item" data-description="B.Tech - Computer Science and Engineering (Information Security)<br><strong>CGPA:</strong> 7.93<br><strong>Coursework:</strong> Operating Systems, Computer Networks, DBMS, DSA, Information Security">
+                <h3>Vellore Institute of Technology (2022–2026)</h3>
             </div>
-        </section>
-    </main>
+            <div class="education-item" data-description="CBSE (PCM)<br><strong>Percentage:</strong> 90.6%">
+                <h3>Venkateshwar Global School (2008–2022)</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section certifications">
+        <h2>Certifications</h2>
+        <div class="certification-list">
+            <div class="certification-item" data-description="Scored 90/100, showcasing proficiency in developing and deploying web apps using the MERN stack.">
+                <h3>Full Stack Developer (MERN) – SmartInternz</h3>
+            </div>
+            <div class="certification-item" data-description="Scored 90%, demonstrating strong knowledge of compute, storage, networking, and security.">
+                <h3>Oracle Cloud Infrastructure 2025 Certified Foundations Associate</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Get In Touch</h2>
+        <a class="Submit-button" href="mailto:devengrover9856@gmail.com?subject=Portfolio%20Inquiry">Email Me</a>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Deven Grover. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/deven-grover/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/devengrover" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
         </div>
+        <p>&copy; 2025 Deven Grover. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Modal Structure -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
